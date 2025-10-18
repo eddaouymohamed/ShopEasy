@@ -1,0 +1,49 @@
+.no-products-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-products-content {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.no-products-icon {
+  color: #fbc02d;
+  font-size: 51px;
+  margin-bottom: 0px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.no-products-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.no-products-message {
+  color: #666;
+  max-width: 400px;
+}
+
+.explore-btn {
+  height: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 1.5rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
