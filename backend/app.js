@@ -20,7 +20,7 @@ if(process.env.NODE_ENV!=='PRODUCTION'){
 dotenv.config({ path: 'backend/config/config.env' })
 }
 const __filename=fileURLToPath(import.meta.url);
-console.log('filename',__filename);
+// console.log('filename',__filename);
 const __dirname=path.dirname(__filename);
 
 const app = express()

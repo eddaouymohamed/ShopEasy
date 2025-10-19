@@ -12,7 +12,7 @@ export const  verifyUserAuth=handleAsyncErrors( async(req,_res,next)=>{
         message='Authentication denied ! please login to acces ressouce';
         return next(new ErrorHandling(message,401))
     }
-    console.log(token)
+    // console.log(token)
     const decodedData=jwt.verify(token,jwtSecretKey);
     // console.log(decodedData)
     const user=await User.findById(decodedData.id);

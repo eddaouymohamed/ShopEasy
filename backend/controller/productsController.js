@@ -21,7 +21,7 @@ export const createProducts = handleAsyncErrors(async (req, res, next) => {
     }
     let imageLinks = [];
     for (let index = 0; index < image.length; index++) {
-        console.log(`Uploading image: ${image[index]}`) // Debug log to check image data
+        // console.log(`Uploading image: ${image[index]}`) // Debug log to check image data
         const result = await cloudinary.uploader.upload(image[index], {
             folder: 'products'
         })
@@ -179,7 +179,7 @@ export const updateProducts = handleAsyncErrors(async (req, res, next) => {
 
 export const deleteProducts = handleAsyncErrors(async (req, res, next) => {
     let product = await Product.findById(req.params.id)
-    console.log(`product to be deleted is :${product}`);
+    // console.log(`product to be deleted is :${product}`);
     if (!product) {
         return next(new ErrorHandling('Product not found ', 500))
     }

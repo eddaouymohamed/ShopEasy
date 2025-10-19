@@ -44,7 +44,7 @@ function CreateProduct() {
     }
     const createProductImage = e => {
         const files = Array.from(e.target.files);
-        console.log(files)
+        // console.log(files)
         setImage([]);
         setImagePreview([]);
         files.forEach(file => {
@@ -52,7 +52,7 @@ function CreateProduct() {
             reader.onload = () => {
                 if (reader.readyState === 2) {
                     setImagePreview(old => {
-                        console.log(old)
+                        // console.log(old)
                         return [...old, reader.result]
                     });
                     setImage(old => [...old, reader.result])

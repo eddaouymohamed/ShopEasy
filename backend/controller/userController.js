@@ -92,7 +92,7 @@ export const requestPasswordReset = handleAsyncErrors(async (req, res, next) => 
         message = 'user not found ';
         return next(new ErrorHandling(message, 400))
     }
-    console.log('user user user user user user user user user user', user);
+    // console.log('user user user user user user user user user user', user);
     let resetToken;
     try {
         resetToken = user.generatePawordResetToken();

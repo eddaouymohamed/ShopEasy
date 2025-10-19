@@ -65,8 +65,8 @@ function ReviewsList() {
     const getProductReviewsHandler = (prod) => {
         // setReviews(prod.reviews)
         setProductId(prod._id)
-        console.log(prod._id)
-        console.log(prod);
+        // console.log(prod._id)
+        // console.log(prod);
         dispatch(getProductReviews(prod._id));
 
         if (reviews.length > 0 && tableRef) {

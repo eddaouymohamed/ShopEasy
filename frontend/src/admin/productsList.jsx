@@ -33,12 +33,12 @@ function ProductsList() {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getAllAdminProducts());
-        console.log(products)
+        // console.log(products)
         // dispatch(deleteProduct('68a2a5fa65c4862d8d645d05'))
 
 
     }, [dispatch])
-    console.log(products)
+    // console.log(products)
     useEffect(() => {
         if (success && message) {
             toast.success(message || 'product short succes delted', { position: 'top-center', autoClose: 3000 })

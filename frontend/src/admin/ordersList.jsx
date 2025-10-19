@@ -12,7 +12,7 @@
 // import { Delete, Edit } from '@mui/icons-material';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import '../styles/AdminStyles/ordersList.css';
+import '../styles/AdminStyles/OrdersList.css';
 import { deleteOrder, fetchOrders, removeErrors, removeMessage, removeSucces } from '../features/admin/adminSlice';
 import PageTitle from '../components/pageTitle';
 import Footer from '../components/footer';
